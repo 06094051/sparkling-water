@@ -10,9 +10,6 @@ ext {
 
 description = "PySparkling - Sparkling-Water Python Package"
 
-configurations {
-    mojopipeline
-}
 dependencies {
     compile project(path: ':sparkling-water-assembly')
 }
