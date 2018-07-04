@@ -84,9 +84,9 @@ def getGradleCommand(config) {
     }
 
     if (config.buildAgainstSparkBranch.toBoolean()) {
-        "${gradleStr} -x checkSparkVersionTask"
+        "${gradleStr} -x checkSparkVersionTask -PtestMojoPipeline=true"
     } else {
-        gradleStr
+        "${gradleStr} -PtestMojoPipeline=true"
     }
 }
 
